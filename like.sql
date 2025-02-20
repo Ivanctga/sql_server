@@ -1,32 +1,18 @@
 
         -- * LIKE  --
 
-    -- ? .
-    -- * Valor BETWEEN mínimo AND máximo;
-    -- * É a mesma coisa que dizer : 
-    -- ! Valor >= minimo AND Valor <= maximo;
-
-
-SELECT coluna1, coluna2
-FROM TABELA 
-WHERE coluna1 BETWEEN 1 AND 10
+    -- ? . Vamos dizer que você quer encontrar uma pessoa no banco d dados que você sabe que o nome dela era ovi... alguma coisa
+    -- * 
 
 SELECT *
-FROM Production.Product
-WHERE ListPrice NOT between 1000 and 1500;
+FROM Person.Person
+WHERE FirstName LIKE '%ovi%'
 
 SELECT *
-FROM HumanResources.Employee
-WHERE HireDate BETWEEN '2009/01/01' and '2010/01/01' 
-order by HireDate
+FROM Person.Person
+WHERE FirstName LIKE '%to'  --!'%to%' -- '%to' -- 'to%' -- '%to_' 
 
 
-/*
-
-    -- * DESAFIO 1 --
-    *    
-
-*/
 
 
 
@@ -45,4 +31,3 @@ order by HireDate
     *    
 
 */
-
