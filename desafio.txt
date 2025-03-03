@@ -63,4 +63,13 @@ AND ListPrice BETWEEN 500 AND 1000
     > terá que usar a tabela production.product
     > terá que usar COUNT, LIKE
 
-    PROXIMA AULA 05
+Resposta:
+
+SELECT COUNT(*)
+FROM Production.Product
+WHERE name LIKE '%road%';
+
+
+    --  DESAFIO 7 ---
+
+    Proxima aula video 6
