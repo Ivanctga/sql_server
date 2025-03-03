@@ -1,8 +1,8 @@
     --  DESAFIO 1 --
 
     Quantos prosutos temos cadastrado no sistema que custam mais que 1500 dolares?
->    Você téra que usar a tabela production.product
->    Vocé terá que usar COUNT E WHERE e mais algum operador de comparação
+    >    Você téra que usar a tabela production.product
+    >    Vocé terá que usar COUNT E WHERE e mais algum operador de comparação
     
 Resposta:
 
@@ -13,8 +13,8 @@ WHERE ListPrice > 1500
     --  DESAFIO 2 --
 
     Quantas pessoas temos com o sobrenome que inicia com a letra P?
->   Você terá que usar a tabela person.person
->   Você tera que usar o COUNT, WHERE, e LIKE 
+    >   Você terá que usar a tabela person.person
+    >   Você tera que usar o COUNT, WHERE, e LIKE 
 
 Resposta:
 
@@ -25,8 +25,8 @@ WHERE LastName like 'p%'
     --  DESAFIO 3 --
 
     Em quantas cidades únicas estão cadastrados nossos clientes?
->   terá que usar a tabela person.address
->   terá que usar COUNT, DISTINCT
+    >   terá que usar a tabela person.address
+    >   terá que usar COUNT, DISTINCT
 
 Resposta:
 
@@ -36,5 +36,31 @@ FROM Person.Address
     --  DESAFIO 4  --
 
     Quais são as cidades únicas que temos cadastradas em nosso sistema?
->   terá que usar a tabela person.address
->
+    >   terá que usar a tabela person.address
+    >   será bem similar a resposta anterior
+
+Resposta :
+
+SELECT DISTINCT(city)
+FROM person.Address
+
+    --  DESAFIO 5  --
+
+    Quantos produtos vermelhos tem o preço entre 500 a 1000 dolares
+    > terá que usar a tabela production.product
+    > terá que usar WHERE, between
+
+Resposta :
+
+SELECT COUNT(*)
+FROM Production.Product
+WHERE color = 'red'
+AND ListPrice BETWEEN 500 AND 1000
+
+    --  DESAFIO 6 ---
+
+    Quantos produtos cadastrados tem a palavra 'road' no nome deles?
+    > terá que usar a tabela production.product
+    > terá que usar COUNT, LIKE
+
+    PROXIMA AULA 05
